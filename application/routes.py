@@ -47,7 +47,7 @@ def courses():
                 }]
     print(courseData[0]["title"])
     print(courseData)
-    return render_template("courses.html", courseData=courseData)
+    return render_template("courses.html", courseData=courseData, courses=True)
 
 
 @app.route("/register")
